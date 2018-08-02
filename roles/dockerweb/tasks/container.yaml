@@ -1,0 +1,23 @@
+
+- name: criando os containers
+  docker_container: 
+   name: index1
+   image: httpd 
+   state: started 
+   volumes: 
+    - index:/usr/local/apache2/htdocs
+   ports:
+    - 8080:80
+
+- name: criando os containers
+  docker_container: 
+   name: index2
+   image: httpd
+   state: started 
+   volumes: 
+    - index:/usr/local/apache2/htdocs
+   ports:
+    - 8081:80 
+
+
+   

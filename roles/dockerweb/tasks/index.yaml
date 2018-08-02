@@ -1,0 +1,12 @@
+
+- name: criando a index
+  file:
+   path: /var/lib/docker/volumes/index/_data/index.html
+   state: touch 
+
+- name: criando a index
+  blockinfile: 
+   path: /var/lib/docker/volumes/index/_data/index.html 
+   block: |
+    criei uma index com o ansible
+    palmeiras nao tem mundial 

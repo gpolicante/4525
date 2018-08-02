@@ -1,0 +1,5 @@
+
+- name: criando minha infra com ansible
+  hosts: docker 
+  roles:
+   - dockerweb 

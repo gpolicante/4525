@@ -1,0 +1,11 @@
+---
+# tasks file for dockerweb
+
+- name: criando o volume do docker
+  include: volume.yaml
+
+- name: criando o container web 
+  include: container.yaml 
+
+- name: criando a index para os container
+  include: index.yaml 

@@ -1,0 +1,4 @@
+
+- name: criando o volume para os containers 
+  docker_volume: 
+   name: index 
